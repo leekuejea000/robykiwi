@@ -15,32 +15,40 @@
     <nav>
         <div class="container nav-container">
             <a href="#" class="logo">Ruby<span>Kiwi</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">홈페이지</a></li>
-                <li><a href="#product">제품</a></li>
-                <li><a href="#story">스토리</a></li>
-                <li><a href="#contact">문의</a></li>
-                <li><a href="#settings"><i class="fa-solid fa-gear"></i> 설정</a></li>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-i18n="menu_home">홈페이지</a></li>
+                <li><a href="#product" data-i18n="menu_product">제품</a></li>
+                <li><a href="#story" data-i18n="menu_story">스토리</a></li>
+                <li><a href="#contact" data-i18n="menu_contact">문의</a></li>
+                <li><a href="#settings"><i class="fa-solid fa-gear"></i> <span data-i18n="menu_settings">설정</span></a></li>
             </ul>
-            <a href="#buy" class="nav-cta">지금 구매하기</a>
+
+            <div class="nav-actions">
+                <button id="langToggle" class="lang-btn">EN</button>
+                <a href="#buy" class="nav-cta" data-i18n="cta_buy">지금 구매하기</a>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container" style="display: flex; align-items: center; gap: 2rem;">
+        <div class="container hero-wrapper">
             <div class="hero-content">
-                <span class="hero-tag">Premium Red Kiwi Variety</span>
-                <h1>자연이 빚은<br><span>붉은 보석</span>, 루비키위</h1>
-                <p>일반 키위보다 3배 더 높은 당도와 풍부한 비타민. 당신의 미각을 깨울 단 하나의 특별한 과일, 루비키위를 경험해보세요.</p>
+                <span class="hero-tag" data-i18n="hero_tag">Premium Red Kiwi Variety</span>
+                <h1 data-i18n="hero_title">자연이 빚은<br><span>붉은 보석</span>, 루비키위</h1>
+                <p data-i18n="hero_desc">일반 키위보다 3배 더 높은 당도와 풍부한 비타민. 당신의 미각을 깨울 단 하나의 특별한 과일, 루비키위를 경험해보세요.</p>
                 <div class="hero-btns">
-                    <a href="#product" class="btn-primary">제품 보기</a>
-                    <a href="#story" class="btn-secondary">우리의 이야기</a>
+                    <a href="#product" class="btn-primary" data-i18n="btn_view_product">제품 보기</a>
+                    <a href="#story" class="btn-secondary" data-i18n="btn_our_story">우리의 이야기</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-bg-blob"></div>
-                <img src="assets/hero.png" alt="루비키위 단면 이미지">
+                <img src="assets/hero.png" alt="Ruby Kiwi Sliced">
             </div>
         </div>
     </section>
@@ -48,25 +56,25 @@
     <!-- Features Section -->
     <section class="section-padding" id="features">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 4rem;">
-                <h2 class="section-title">왜 <span>루비키위</span>인가요?</h2>
-                <p style="color: var(--text-light);">다른 과일과는 차원이 다른 루비키위만의 세 가지 약속</p>
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features_title">왜 <span>루비키위</span>인가요?</h2>
+                <p style="color: var(--text-light);" data-i18n="features_subtitle">다른 과일과는 차원이 다른 루비키위만의 세 가지 약속</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-candy-cane"></i></div>
-                    <h3>극강의 달콤함</h3>
-                    <p>평균 20브릭스 이상의 고당도. 신맛은 적고 꿀처럼 달콤한 맛이 일품입니다.</p>
+                    <h3 data-i18n="feature1_title">극강의 달콤함</h3>
+                    <p data-i18n="feature1_desc">평균 20브릭스 이상의 고당도. 신맛은 적고 꿀처럼 달콤한 맛이 일품입니다.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
-                    <h3>영양 폭발</h3>
-                    <p>비타민 C가 오렌지의 2배! 안토시아닌이 풍부하여 항산화 작용에 탁월합니다.</p>
+                    <h3 data-i18n="feature2_title">영양 폭발</h3>
+                    <p data-i18n="feature2_desc">비타민 C가 오렌지의 2배! 안토시아닌이 풍부하여 항산화 작용에 탁월합니다.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
-                    <h3>희소 가치</h3>
-                    <p>일 년 중 짧은 기간에만 수확되는 프리미엄 품종으로 특별한 선물이 됩니다.</p>
+                    <h3 data-i18n="feature3_title">희소 가치</h3>
+                    <p data-i18n="feature3_desc">일 년 중 짧은 기간에만 수확되는 프리미엄 품종으로 특별한 선물이 됩니다.</p>
                 </div>
             </div>
         </div>
@@ -77,14 +85,14 @@
         <div class="container">
             <div class="story">
                 <div class="story-image reveal">
-                    <img src="assets/basket.png" alt="바구니에 담긴 루비키위">
+                    <img src="assets/basket.png" alt="Ruby Kiwi Basket">
                 </div>
                 <div class="story-content reveal">
-                    <h2 class="section-title">자연의 <span>순수함</span>을 담다</h2>
-                    <p style="margin-bottom: 1.5rem;">루비키위는 비옥한 토양과 따스한 햇살 아래서 정성껏 재배됩니다. 우리는 농약 사용을 최소화하고, 가장 맛있는 순간에 수확하여 산지의 신선함을 그대로 전달합니다.</p>
-                    <p>한 입 베어 물 때 느껴지는 과즙의 풍미는 당신의 하루를 더욱 특별하게 만들어 줄 것입니다.</p>
+                    <h2 class="section-title" data-i18n="story_title">자연의 <span>순수함</span>을 담다</h2>
+                    <p style="margin-bottom: 1.5rem;" data-i18n="story_desc1">루비키위는 비옥한 토양과 따스한 햇살 아래서 정성껏 재배됩니다. 우리는 농약 사용을 최소화하고, 가장 맛있는 순간에 수확하여 산지의 신선함을 그대로 전달합니다.</p>
+                    <p data-i18n="story_desc2">한 입 베어 물 때 느껴지는 과즙의 풍미는 당신의 하루를 더욱 특별하게 만들어 줄 것입니다.</p>
                     <div style="margin-top: 2rem;">
-                        <a href="#contact" class="btn-primary">산지 직송 문의</a>
+                        <a href="#contact" class="btn-primary" data-i18n="btn_direct_contact">산지 직송 문의</a>
                     </div>
                 </div>
             </div>
@@ -94,28 +102,28 @@
     <!-- Product Section -->
     <section class="section-padding" id="product">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 4rem;">
-                <h2 class="section-title">우리의 <span>프리미엄</span> 라인업</h2>
-                <p style="color: var(--text-light);">용도에 맞는 최적의 선택을 제안합니다.</p>
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="product_title">우리의 <span>프리미엄</span> 라인업</h2>
+                <p style="color: var(--text-light);" data-i18n="product_subtitle">용도에 맞는 최적의 선택을 제안합니다.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card reveal" style="padding: 2rem;">
-                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;">GIFT SET</div>
-                    <h3>루비키위 선물세트</h3>
-                    <p>최고 등급의 과육만을 엄선한 품격 있는 선물</p>
-                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;">₩ 45,000</div>
+                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;" data-i18n="prod1_tag">GIFT SET</div>
+                    <h3 data-i18n="prod1_title">루비키위 선물세트</h3>
+                    <p data-i18n="prod1_desc">최고 등급의 과육만을 엄선한 품격 있는 선물</p>
+                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;" data-i18n="prod1_price">₩ 45,000</div>
                 </div>
                 <div class="feature-card reveal" style="padding: 2rem;">
-                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;">FAMILY PACK</div>
-                    <h3>가족 실속형 2kg</h3>
-                    <p>온 가족이 넉넉하게 즐길 수 있는 합리적인 구성</p>
-                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;">₩ 29,900</div>
+                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;" data-i18n="prod2_tag">FAMILY PACK</div>
+                    <h3 data-i18n="prod2_title">가족 실속형 2kg</h3>
+                    <p data-i18n="prod2_desc">온 가족이 넉넉하게 즐길 수 있는 합리적인 구성</p>
+                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;" data-i18n="prod2_price">₩ 29,900</div>
                 </div>
                 <div class="feature-card reveal" style="padding: 2rem;">
-                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;">SUBSCRIPTION</div>
-                    <h3>정기 구독 서비스</h3>
-                    <p>제철 루비키위를 매주 신선하게 집 앞으로</p>
-                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;">₩ 15,000 / 주</div>
+                    <div style="font-size: 0.9rem; color: var(--ruby); font-weight: 700; margin-bottom: 1rem;" data-i18n="prod3_tag">SUBSCRIPTION</div>
+                    <h3 data-i18n="prod3_title">정기 구독 서비스</h3>
+                    <p data-i18n="prod3_desc">제철 루비키위를 매주 신선하게 집 앞으로</p>
+                    <div style="margin-top: 1.5rem; font-size: 1.5rem; font-weight: 800;" data-i18n="prod3_price">₩ 15,000 / 주</div>
                 </div>
             </div>
         </div>
@@ -124,15 +132,15 @@
     <!-- Contact Section -->
     <section class="section-padding" id="contact" style="background: var(--forest); color: white;">
         <div class="container" style="text-align: center;">
-            <h2 class="section-title" style="color: white;">함께 <span>시작</span>해볼까요?</h2>
-            <p style="margin-bottom: 3rem; opacity: 0.8;">대량 구매, 유통 문의 등 궁금한 점은 언제든 남겨주세요.</p>
+            <h2 class="section-title" style="color: white;" data-i18n="contact_title">함께 <span>시작</span>해볼까요?</h2>
+            <p style="margin-bottom: 3rem; opacity: 0.8;" data-i18n="contact_subtitle">대량 구매, 유통 문의 등 궁금한 점은 언제든 남겨주세요.</p>
             <form style="max-width: 600px; margin: 0 auto; display: grid; gap: 1rem;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                    <input type="text" placeholder="성함" style="padding: 1rem; border-radius: 10px; border: none;">
-                    <input type="email" placeholder="이메일" style="padding: 1rem; border-radius: 10px; border: none;">
+                    <input type="text" placeholder="성함" data-i18n-placeholder="placeholder_name" style="padding: 1rem; border-radius: 10px; border: none;">
+                    <input type="email" placeholder="이메일" data-i18n-placeholder="placeholder_email" style="padding: 1rem; border-radius: 10px; border: none;">
                 </div>
-                <textarea placeholder="문의 내용" rows="5" style="padding: 1rem; border-radius: 10px; border: none;"></textarea>
-                <button type="submit" class="btn-primary" style="border: none; cursor: pointer;">문의 보내기</button>
+                <textarea placeholder="문의 내용" data-i18n-placeholder="placeholder_message" rows="5" style="padding: 1rem; border-radius: 10px; border: none;"></textarea>
+                <button type="submit" class="btn-primary" style="border: none; cursor: pointer;" data-i18n="btn_submit">문의 보내기</button>
             </form>
         </div>
     </section>
@@ -140,10 +148,10 @@
     <!-- Footer -->
     <footer style="padding: 3rem 0; text-align: center; background: #122a24; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
         <div class="container">
-            <p>© 2026 Ruby Kiwi Co. All Rights Reserved.</p>
+            <p data-i18n="footer_copy">© 2026 Ruby Kiwi Co. All Rights Reserved.</p>
             <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
-                <a href="#">개인정보처리방침</a>
-                <a href="#">이용약관</a>
+                <a href="#" data-i18n="footer_privacy">개인정보처리방침</a>
+                <a href="#" data-i18n="footer_terms">이용약관</a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
